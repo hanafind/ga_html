@@ -51,6 +51,7 @@
 }
 .jumbotron .row{
     position: absolute;
+    margin: 0;
     width: 100%;
     bottom: 50px;
     z-index: 10;
@@ -59,6 +60,13 @@
     flex: none;
     padding-left: 6rem !important;
     width: 80%;
+}
+@media (max-width: 768px) {
+    .jumbotron .col{
+        margin: 0 auto;
+        padding: 0 !important;
+        width: 90%;
+    }
 }
 .jumbotron .feature-heading, .jumbotron .entry-title, .jumbotron .entry-meta, .jumbotron .entry-excerpt, .jumbotron a{
     color: #fff !important;
@@ -69,11 +77,38 @@
 }
 .jumbotron .entry-excerpt{
     font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
-@media (min-width: 500px) {
-
+@media (max-width: 768px) {
+    .jumbotron .feature-heading{
+        font-size: 1.2rem;
+    }
+    .jumbotron .entry-title{
+        font-size: 1.6rem;
+    }
 }
 
+@media (max-width: 500px) {
+    .jumbotron .feature-heading{
+        font-size: 1rem;
+    }
+    .jumbotron .entry-title{
+        font-size: 1.4rem;
+    }
+    .jumbotron .entry-meta, .jumbotron .entry-excerpt{
+        font-size: .9rem;
+        -webkit-line-clamp: 2;
+    }
+    .jumbotron .feature-heading, .jumbotron .entry-title, .jumbotron .entry-meta, .jumbotron .entry-excerpt, .jumbotron a{
+        margin-bottom: .3rem !important;
+    }
+}
+
+/* swiper */
 .swiper-button-prev, .swiper-button-next {
     color: #fff;
 }
@@ -85,6 +120,11 @@
 }
 .swiper-button-next {
     right: 30px;
+}
+@media (max-width: 768px) {
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
 }
 
 .posts-wrap .row{
