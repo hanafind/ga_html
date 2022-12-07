@@ -6,7 +6,7 @@
 .navbar-transparent .navbar-brand{
     color: #fff !important;
 }
-.navbar-transparent .nav-link{
+.navbar-transparent .offcanvas:not(.show) .nav-link{
     color: #fff !important;
 }
 .navbar .dropdown-item:hover, .dropdown-item:focus {
