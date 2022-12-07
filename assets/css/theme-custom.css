@@ -180,3 +180,22 @@
     font-size: .8rem !important;
     color: #6b7684;
 }
+
+/* footer */
+.footer .navbar-brand{
+    font-size: 1rem;
+}
+.footer .footer-address{
+    font-size: .7rem !important;
+}
+@media (max-width: 768px) {
+    .footer .navbar-brand{
+        font-size: .8rem;
+    }
+    .footer .footer-address{
+        font-size: .6rem !important;
+    }
+    .footer .footer-copy{
+        font-size: .5rem !important;
+    }
+}
