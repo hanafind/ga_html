@@ -18,15 +18,24 @@
 .navbar.navbar-transparent .hanafind-white{
     display: block;
 }
+.navbar.navbar-transparent .navbar-toggler-icon,
+.navbar.navbar-transparent .navbar-toggler-icon::before,
+.navbar.navbar-transparent .navbar-toggler-icon::after{
+    background-color: #ffffff;
+}
 .navbar:not(.navbar-transparent) .hanafind-black{
     display: block;
 }
-
 .navbar .top-logo{
     width: 150px;
     height: 27px;
 }
-
+@media (max-width: 500px) {
+    .navbar .top-logo{
+        width: 122px;
+        height: 22px;
+    }
+}
 /* jumbotron */
 .jumbotron{
     position: relative;
