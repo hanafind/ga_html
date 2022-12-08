@@ -153,6 +153,16 @@
 .posts-wrap .card-img, .posts-wrap .card-img-top{
     border-radius: 15px;
 }
+.posts-wrap .card-img-top{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.posts-wrap .card-img-top:hover{
+    -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
 .posts-wrap .card-body{
     padding: 1rem 0 1rem 0;
 }
